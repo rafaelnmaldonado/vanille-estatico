@@ -1,0 +1,73 @@
+.screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 25%;
+    background-color: #c7bba9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-family: 'Segoe UI', sans-serif;
+    color: #c7bba9;
+    background-color: #492d16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+img {
+    height: 200%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    z-index: 1000;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp svg {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
